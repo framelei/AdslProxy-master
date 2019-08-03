@@ -12,7 +12,7 @@ ADSL_BASH = 'adsl-stop;adsl-start'
 PROXY_PORT = 8888
 
 # 客户端唯一标识
-CLIENT_NAME = 'adsl1'
+CLIENT_NAME = 'adsl.01'
 
 # 拨号网卡
 ADSL_IFNAME = 'ppp0'
@@ -27,7 +27,7 @@ REDIS_PASSWORD = 'Re_Lei'
 REDIS_PORT = 6379
 
 # 代理池键名
-PROXY_KEY = 'adsl'
+PROXY_KEY = 'ADSL'
 
 # 测试URL
 TEST_URL = 'http://www.baidu.com'
