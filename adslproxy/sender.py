@@ -37,10 +37,10 @@ class Sender():
         :return: 测试结果
         """
         try:
-            response = requests.get(TEST_URL, proxies={
+            response = requests.get(TEST_URL, headers=REQUEST_HEADERS,proxies={
                 'http': 'http://' + proxy,
                 'https': 'https://' + proxy
-            }, timeout=TEST_TIMEOUT)
+            }, timeout=TEST_TIMEOUT,)
             if response.status_code == 200:
                 return True
         except (ConnectionError, ReadTimeout):
